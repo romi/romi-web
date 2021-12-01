@@ -1,3 +1,24 @@
+
+body {
+    background-color: #00a960;
+}
+
+/* Modify the background color */
+.navbar-custom {
+    background-color: #00a960;
+}
+
+/* Modify brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: white;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    text-decoration: none;
+}
+
 /* Partners Section */
 
 @media (min-width: 768px) {
