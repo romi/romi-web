@@ -15,7 +15,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-custom">
       <div class="container">
-        <a href="#" class="navbar-brand">
+        <a href="index.html" class="navbar-brand">
             <img src="assets/images/romi_logo_icon.svg" height="54" alt="ROMI">
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -24,7 +24,7 @@
         
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav">
-            <a href="index2.html" class="nav-item nav-link">Home</a>
+            <a href="index.html" class="nav-item nav-link">Home</a>
             <div class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tools</a>
               <div class="dropdown-menu">
@@ -34,7 +34,14 @@
               </div>
             </div>
             <a href="research.html" class="nav-item nav-link">Research</a>
-            <a href="https://docs.romi-project.eu" class="nav-item nav-link">Documentation</a>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Documentation</a>
+              <div class="dropdown-menu">
+                <a href="https://docs.romi-project.eu/Scanner/" class="dropdown-item">Plant Phenotyping</a>
+                <a href="https://docs.romi-project.eu/Farmers%20Dashboard/" class="dropdown-item">Crop Monitoring</a>
+                <a href="https://docs.romi-project.eu/Rover/" class="dropdown-item">Weeding Robot</a>
+              </div>
+            </div>
             <a href="downloads.html" class="nav-item nav-link">Downloads</a>
             <a href="about.html" class="nav-item nav-link active">About</a>
           </div>
@@ -44,14 +51,92 @@
     </nav>
 
     <div class="container">
-      <p>ROMI is a four-year Europe-funded research project committed to promote a sustainable, local, and human-scale agriculture. The goal is to develop an open-source, affordable, multipurpose platform adapted to support organic and poly-culture market-garden farms.</p>
-    </div>
+      
+      <div class="text-center">
+        <h2>About</h2>
+      </div>
+      
+      <div class="m-5">
+        <p>ROMI is a four-year Europe-funded research project
+          committed to promote a sustainable, local, and human-scale
+          agriculture. The goal is to develop an open-source,
+          affordable, multipurpose platform adapted to support organic
+          and poly-culture market-garden farms.</p>
+        
+        <p>Small, diversified vegetable farms have an important role
+          to play in sustainable food production. Installed close to
+          cities, they provide healthy vegetables at accessible prices
+          through short supply chains. They contribute to the
+          biodiversity in peri-urban areas and re-establish the missing
+          link between urban and rural areas.</p>
+        
+        <p>The Robotics for Microfarms project (ROMI) looks at the use
+          of new technology, including robotics, AI, and advanced
+          modeling, to assist these farms.</p>
 
+        <p>The sizes of the farms that we are addressing are between
+          1000 m² and five hectares. These farms grow a large number of
+          vegetables, up to a hundred varieties, every season. Because
+          of this complexity, most of the planting out, weeding, and
+          harvesting is performed manually. This work is quite physical
+          and time consuming. The ROMI project looks at how new
+          technologies can aid these farmers. The solutions must be
+          adapted to the constraints imposed by these farms (small size,
+          many different crops, lower investment capacity). The ROMI
+          project therefore proposes technologies that are inexpensive,
+          light-weight, and adaptable.</p>
+
+        <p>We are looking both at concrete technologies for short-term
+          applications as well as research for more long-term
+          requirements. In the short term, we look at automatic weeding
+          and crop monitoring for more precise crop planning. In the
+          longer term, we deal with 3D imaging and modeling of
+          individual plants for detailed plant health analysis and
+          selective plant breeding. We also look into adative robotics
+          so that our tools can deal gracefully with the complex,
+          time-varying, in-field conditions.</p>
+        
+        <p>The ROMI technologies are available under an Open Source
+          license in the hope of reaching as many microfarms as
+          possible. We are currently targeting the European microfarms
+          but we keep in mind that worldwide there are over 500 million
+          small-holder farms that could benefit from our work. </p>
+      </div>
+    </div>
+    
+    
     <div class="container">
+      
+      <div class="row text-center">
+        <h2 class="">ROMI Partners</h2>
+      </div>
+      
       <div class="row seven-cols partners">
         <div class="col-md-1 partner">
-          <div class="partner-icon"><a class="partner-icon" href="https://iaac.net/"><img src="media/iaac-fablabbcn-logo-black-copy.png" width="160px"></a></div>
-          <div class="partner-text">IAAC develops an aerial robot that can be used by farmers. Iaac also performs real-world tests in the experimental gardens at the Valldaura Self-Sufficient Labs and imagine end-user scenarios. They help deliver the robotics platform to new markets, managing the communication and user communities.</div>
+
+
+          <!--<div class="card">
+
+            <div class="partner-icon">
+              <a class="partner-icon" href="https://iaac.net/">
+                <img src="media/iaac-fablabbcn-logo-black-copy.png" width="160px" class="card-img-top">
+              </a>
+            </div> -->
+
+            <!-- img src="media/iaac-fablabbcn-logo-black-copy.png" width="160px" class="card-img-top" -->
+            <!--<div class="card-body">
+              <p class="card-text">IAAC develops an aerial robot that can be
+                used by farmers. Iaac also performs real-world tests in the
+                experimental gardens at the Valldaura Self-Sufficient Labs and
+                imagine end-user scenarios. They help deliver the robotics
+                platform to new markets, managing the communication and user
+                communities.</p>
+            </div>
+          </div> -->
+          
+            <div class="partner-icon"><a class="partner-icon" href="https://iaac.net/"><img src="media/iaac-fablabbcn-logo-black-copy.png" width="160px"></a></div>
+              <div class="partner-text">IAAC develops an aerial robot that can be used by farmers. Iaac also performs real-world tests in the experimental gardens at the Valldaura Self-Sufficient Labs and imagine end-user scenarios. They help deliver the robotics platform to new markets, managing the communication and user communities.</div>
+          
         </div>
         <div class="col-md-1 partner">
           <div class="partner-icon"><a class="partner-icon" href="https://csl.sony.fr/projects-sustainability/"><img src="media/img-brand-01.png" width="160px"></a></div>
@@ -78,7 +163,21 @@
           <div class="partner-text">FEI provides assistance and training for projects partly funded by the European Commission, as coordinator or as partner. FEI intervenes close to them in the administrative, financial coordination and management of their projects.</div>
         </div>
       </div>
+    </div>
 
+    <div class="container p-5">
+      <div class="row mt-5">
+        <div class="col-md-1">
+          <img src="assets/images/eu_flag.svg" width="100px"/>
+        </div>
+        <div class="col-md-11">
+          <p>The ROMI project has received funding from the European Union’s
+            Horizon 2020 research and innovation programme under grant
+            agreement No 773875.</p>
+        </div>
+      </div>
+    </div>
+        
     <!-- Bootstrap Bundle with Popper -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 

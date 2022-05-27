@@ -19,6 +19,38 @@ body {
     text-decoration: none;
 }
 
+/* Modify brand and text color */
+.navbar-custom-main {
+    background-color: #00000010;
+}
+
+.navbar-custom-main .navbar-brand,
+.navbar-custom-main .navbar-text {
+    color: black;
+}
+
+.navbar-custom-main .navbar-nav .nav-link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/**/
+
+.link-main-page {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.image-text {
+    font-size: 150%;
+}
+
+.section-text {
+    font-size: 180%;
+}
+
 /* Partners Section */
 
 @media (min-width: 768px) {
@@ -32,14 +64,14 @@ body {
 	.seven-cols .col-md-1,
 	.seven-cols .col-sm-1,
 	.seven-cols .col-lg-1 {
-	width: 14.285714285714285714285714285714%;
+	width: 13%;
 	}
 }
 @media (min-width: 1200px) {
 	.seven-cols .col-md-1,
 	.seven-cols .col-sm-1,
 	.seven-cols .col-lg-1 {
-	width: 14.285714285714285714285714285714%;
+	width: 13%;
 	}
 }
 .partners {
@@ -47,6 +79,9 @@ body {
 	margin-bottom: 10px;
 }
 .partner {
+    background-color: white;
+    margin: 2px;
+    border-radius: 5px;
 }
 div.partner-icon {
 	height: 162px;

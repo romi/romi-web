@@ -15,7 +15,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-custom">
       <div class="container">
-        <a href="#" class="navbar-brand">
+        <a href="index.html" class="navbar-brand">
             <img src="assets/images/romi_logo_icon.svg" height="54" alt="ROMI">
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -24,7 +24,7 @@
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav">
-            <a href="index2.html" class="nav-item nav-link">Home</a>
+            <a href="index.html" class="nav-item nav-link">Home</a>
             <div class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Tools</a>
               <div class="dropdown-menu">
@@ -56,52 +56,44 @@
     </div> -->
 
     <div class="container">
+
+      <!-- Section text -->
+      <div class="row p-3">
+
+        <h2 class="text-center">The ROMI Rover</h2>
+        
+        <div class="card">
+          <div class="card-body text-center section-text">
+            The ROMI Rover is a farming tool that assists vegetable
+            farmers in maintaining vegetable beds free of weeds. It does
+            this by regularly hoeing the surface of the soil and thus
+            preventing small weeds from taking root. A weekly passage of
+            the robot should be sufficient to keep the population of
+            weeds under control.
+          </div>
+        </div>
+      </div>
+      
+      <!-- Video -->
       <div class="p-5">
         <div class="ratio ratio-16x9">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/0-Focjjzc7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
 
-    <div class="container">
-      <div class="row p-3">
-        <div class="col-md-6">
-        </div>
-        <div class="col-md-6">
-          The ROMI Rover is a farming tool that assists vegetable
-          farmers in maintaining vegetable beds free of weeds. It does
-          this by regularly hoeing the surface of the soil and thus
-          preventing small weeds from taking root. A weekly passage of
-          the robot should be sufficient to keep the population of
-          weeds under control.
-        </div>
-      </div>
-
-      <div class="row p-3">
-        <div class="col-md-2">
-        </div>
-        <div class="col-md-4">
-          <img src="media/chatelain-1200x635.jpg" width="100%">
-        </div>
-        <div class="col-md-6">
-          The ROMI Rover is targeted at farms that grow small crops,
-          such as lettuce and carrots, on a relatively small surface,
-          between 200 m² and 5 ha (Utilized Agricultural Area).
-        </div>
-      </div>
-
+      <!-- Start thumbnails & text -->
       <div class="row p-3">
         <div class="col-md-2">
         </div>
         <div class="col-md-4">
           <img src="media/DSC00553-1200x635.jpg" width="100%">
         </div>
-        <div class="col-md-6">
-          It can do the weeding task mostly autonomously and requires
-          only minor changes to the organization of the farm. It is
-          designed for vegetable beds between 70 cm and 120 cm wide
-          (not including the passage ways) and for crops up to 50 cm
-          high.
+        <div class="col-md-6 image-text">
+          The ROMI Rover can perform the weeding task mostly
+          autonomously and requires only minor changes to the
+          organization of the farm. It is designed for vegetable beds
+          between 70 cm and 120 cm wide (not including the passage
+          ways) and for crops up to 50 cm high.
         </div>
       </div>
 
@@ -111,23 +103,29 @@
         <div class="col-md-4">
           <img src="media/tool-1200x635.jpg" width="100%">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 image-text">
           It currently handles two types of crops, lettuce and
           carrots.  The lettuce can be planted out in any layout, most
           likely in a quincunx pattern. In this configuration the
           rover uses a precision rotary hoe to clean the soil both
-          between the rows and the plants.
+          between the rows and the plants. This process is slower than
+          classical mechanical weeding. The rover can cover up to 600
+          m²/day.
         </div>
       </div>
 
       <div class="row p-3">
-        <div class="col-md-6">
+        <div class="col-md-2">
         </div>
-        <div class="col-md-6">
-          For carrots, the rover uses classical mechanical
-          tools, such as stirrup hoe, to regularly clean the soil in
-          between the rows. In this configuration, the carrots should
-          be sown in line.
+        <div class="col-md-4">
+          <img src="media/tool-carrier.jpg" width="100%">
+        </div>
+        <div class="col-md-6 image-text">
+          For carrots, the rover uses classical mechanical tools, such
+          as stirrup hoe, to regularly clean the soil in between the
+          rows. In this configuration, the carrots should be sown in
+          line. In this classic configuration, the rover can cover a
+          surface of 7200 m²/day.
         </div>
       </div>
 
@@ -137,12 +135,19 @@
         <div class="col-md-4">
           <img src="media/lettuce-1200x635.jpg" width="100%">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 image-text">
           In addition to weeding, the embedded camera can be used to
-          collect images of the vegetable beds. It can also be used as
-          a motorized tray.
+          collect images of the vegetable beds. This images can be
+          used by the <a href="crop-monitoring.html" style="color:#0e0e0e;">Farmer's
+          Dashboard</a>. 
         </div>
       </div>
+
+      <div class="row m-5">
+        <div class="col">
+        </div>
+      </div>
+
     </div>
 
 
