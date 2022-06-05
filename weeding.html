@@ -13,6 +13,7 @@
   </head>
   <body>
 
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-custom">
       <div class="container">
         <a href="index.html" class="navbar-brand">
@@ -55,106 +56,157 @@
       </div>
     </nav>
 
-    <!-- <div class="container-fluid">
-      <div class="bg-image" style="background-image: url('media/DSC05068-1920x1280.jpg'); height: 800px;">
-      </div>
-    </div> -->
 
-    <div class="container">
+    <!-- Intro -->
+    <header>
+      <div class="container">
 
-      <!-- Section text -->
-      <div class="row p-3">
-
-        <h2 class="text-center">The ROMI Rover</h2>
-        
-        <div class="card">
-          <div class="card-body text-center section-text">
-            The ROMI Rover is a farming tool that assists vegetable
-            farmers in maintaining vegetable beds free of weeds. It does
-            this by regularly hoeing the surface of the soil and thus
-            preventing small weeds from taking root. A weekly passage of
-            the robot should be sufficient to keep the population of
-            weeds under control.
+        <div class="row p-3">
+          
+          <h2 class="text-center">The ROMI Rover</h2>
+          
+          <div class="card">
+            <div class="card-body text-center section-text">
+              The ROMI Rover is a farming tool that assists vegetable
+              farmers in maintaining vegetable beds free of weeds. It does
+              this by regularly hoeing the surface of the soil and thus
+              preventing small weeds from taking root. A weekly passage of
+              the robot should be sufficient to keep the population of
+              weeds under control.
+            </div>
           </div>
         </div>
       </div>
+    </header>
       
-      <!-- Video -->
-      <div class="p-5">
-        <div class="ratio ratio-16x9">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/0-Focjjzc7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- Main -->
+    <main>      
+      <div class="container">
+        
+        <!-- Video -->
+        <figure>
+          <div class="row p-5">
+            <div class="ratio ratio-16x9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/0-Focjjzc7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </figure>
+
+        <!-- Start thumbnails & text -->
+        <section>
+          <div class="row p-3">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-4">
+              <img src="media/DSC00553-1200x635.jpg" width="100%">
+            </div>
+            <div class="col-md-6 image-text">
+              The ROMI Rover can perform the weeding task mostly
+              autonomously and requires only minor changes to the
+              organization of the farm. It is designed for vegetable beds
+              between 70 cm and 120 cm wide (not including the passage
+              ways) and for crops up to 50 cm high.
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="row p-3">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-4">
+              <img src="media/tool-1200x635.jpg" width="100%">
+            </div>
+            <div class="col-md-6 image-text">
+              It currently handles two types of crops, lettuce and
+              carrots.  The lettuce can be planted out in any layout, most
+              likely in a quincunx pattern. In this configuration the
+              rover uses a precision rotary hoe to clean the soil both
+              between the rows and the plants. This process is slower than
+              classical mechanical weeding. The rover can cover up to 600
+              m²/day.
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="row p-3">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-4">
+              <img src="media/tool-carrier.jpg" width="100%">
+            </div>
+            <div class="col-md-6 image-text">
+              For carrots, the rover uses classical mechanical tools, such
+              as stirrup hoe, to regularly clean the soil in between the
+              rows. In this configuration, the carrots should be sown in
+              line. In this classic configuration, the rover can cover a
+              surface of 7200 m²/day.
+            </div>
+          </div>
+        </section>
+        
+        <section>
+          <div class="row p-3">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-4">
+              <img src="media/lettuce-1200x635.jpg" width="100%">
+            </div>
+            <div class="col-md-6 image-text">
+              In addition to weeding, the embedded camera can be used to
+              collect images of the vegetable beds. This images can be
+              used by the <a href="crop-monitoring.html" style="color:#0e0e0e;">Farmer's
+                Dashboard</a>. 
+            </div>
+          </div>
+        </section>
+
+      </div> <!-- container -->
+    </main>
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-5">
+            <strong class="logo">
+              <a href="index.html">
+                <span class="visually-hidden">ROMI - Robotics for Microfarms</span>
+              </a>
+            </strong>
+            <ul id="menu-footer-contact-navigation" class="contact-list">
+              <li id="menu-item-149" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-149"><a href="">info@romi-project.eu<i><img src="media/mail.svg" alt="media/mail.svg"></i></a></li>
+              <li id="menu-item-150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-150"><a href="https://twitter.com/ROMI_EU_PROJECT">@ROMI_EU_PROJECT<i><img src="media/tw.svg" alt="media/tw.svg"></i></a></li>
+              <li id="menu-item-151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-151"><a href="https://www.facebook.com/ROMIEUProject">/ROMIEUProject/<i><img src="media/fb.svg" alt="media/fb.svg"></i></a></li>
+          </ul>            </div>
+          <div class="col-md-5 col-sm-7">
+            <div class="col-wrap">
+              <div class="subscribe-form">
+                <!-- Add mailchimp code here -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="info-col">
+              <div class="descr">
+                <figure class="img">
+                  <img src="assets/images/eu_flag.svg" width="100px" alt="Romi">
+                </figure>
+                <p>This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 773875</p>
+              </div>
+              <div class="copyright">
+                <p>Copyright 2021 &copy; ROMI - Robotics for Microfarms</p>
+              </div>
+            </div>
+            <!-- / info-col -->
+          </div>
+          <!-- / col -->
         </div>
+        <!-- / row -->
       </div>
-
-      <!-- Start thumbnails & text -->
-      <div class="row p-3">
-        <div class="col-md-2">
-        </div>
-        <div class="col-md-4">
-          <img src="media/DSC00553-1200x635.jpg" width="100%">
-        </div>
-        <div class="col-md-6 image-text">
-          The ROMI Rover can perform the weeding task mostly
-          autonomously and requires only minor changes to the
-          organization of the farm. It is designed for vegetable beds
-          between 70 cm and 120 cm wide (not including the passage
-          ways) and for crops up to 50 cm high.
-        </div>
-      </div>
-
-      <div class="row p-3">
-        <div class="col-md-2">
-        </div>
-        <div class="col-md-4">
-          <img src="media/tool-1200x635.jpg" width="100%">
-        </div>
-        <div class="col-md-6 image-text">
-          It currently handles two types of crops, lettuce and
-          carrots.  The lettuce can be planted out in any layout, most
-          likely in a quincunx pattern. In this configuration the
-          rover uses a precision rotary hoe to clean the soil both
-          between the rows and the plants. This process is slower than
-          classical mechanical weeding. The rover can cover up to 600
-          m²/day.
-        </div>
-      </div>
-
-      <div class="row p-3">
-        <div class="col-md-2">
-        </div>
-        <div class="col-md-4">
-          <img src="media/tool-carrier.jpg" width="100%">
-        </div>
-        <div class="col-md-6 image-text">
-          For carrots, the rover uses classical mechanical tools, such
-          as stirrup hoe, to regularly clean the soil in between the
-          rows. In this configuration, the carrots should be sown in
-          line. In this classic configuration, the rover can cover a
-          surface of 7200 m²/day.
-        </div>
-      </div>
-
-      <div class="row p-3">
-        <div class="col-md-2">
-        </div>
-        <div class="col-md-4">
-          <img src="media/lettuce-1200x635.jpg" width="100%">
-        </div>
-        <div class="col-md-6 image-text">
-          In addition to weeding, the embedded camera can be used to
-          collect images of the vegetable beds. This images can be
-          used by the <a href="crop-monitoring.html" style="color:#0e0e0e;">Farmer's
-          Dashboard</a>. 
-        </div>
-      </div>
-
-      <div class="row m-5">
-        <div class="col">
-        </div>
-      </div>
-
-    </div>
-
+      <!-- / container -->
+    </footer><!-- end footer -->
 
 
     <!-- Bootstrap Bundle with Popper -->

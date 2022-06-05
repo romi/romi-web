@@ -446,7 +446,7 @@
 
  #footer h3 { font-weight:600; font-size:18px; line-height:23px; margin-top:0; margin-bottom:14px; }
 
- #footer .logo { display:block; width:189px; height:74px; margin-left:-2px; margin-bottom:42px; background:url("/assets/images/romi_logo_icon.svg") no-repeat; background-size:100% auto; }
+ #footer .logo { display:block; width:189px; height:74px; margin-left:-2px; margin-bottom:42px; background:url("assets/images/romi_logo_icon.svg") no-repeat; background-size:100% auto; }
 
  #footer .logo a { display:block; height:100%; }
 

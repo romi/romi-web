@@ -9,20 +9,21 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/romi.css" rel="stylesheet">
 
-    <title>ROMI - Research</title>
+    <title>ROMI - Plant Phenotyping</title>
   </head>
+
   <body>
 
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-custom">
       <div class="container">
-        
         <a href="index.html" class="navbar-brand">
             <img src="assets/images/romi_logo_icon.svg" height="54" alt="ROMI">
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
         </button>
-        
+
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav">
             
@@ -46,21 +47,139 @@
                 <a href="adative-systems.html" class="dropdown-item">Adative systems</a>
               </div>
             </div>
-
-            <a href="https://docs.romi-project.eu/" class="nav-item nav-link">Documentation</a>
+                  
+            <a href="https://docs.romi-project.eu/" class="nav-item nav-link">Documentation</a>            
             <a href="downloads.html" class="nav-item nav-link">Downloads</a>
             <a href="about.html" class="nav-item nav-link">About</a>
           </div>
         </div>
-        
+
       </div>
     </nav>
 
-    <div class="container">
-      <h1>This is a heading</h1>
-      <p>This is a paragraph of text.</p>
-    </div>
+    <!-- Intro -->
+    <header>
+      <div class="container">
+        
+        <div class="row p-3">
 
+          <h2 class="text-center">Adaptive systems</h2>
+          
+          <div class="card">
+            <div class="card-body text-center section-text">
+              We investigate advanced, open-ended learning techniques
+              to gain insight in how farming robots can adapt their
+              image processing capacities when facing plants on which
+              they have not been trained, and insights in how they can
+              learn to optimise the collection of visual information
+              when facing complex plant scenes.
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Main -->
+    <main>      
+      <div class="container">
+        
+        <!-- Video -->
+        <!-- figure>
+          <div class="p-5">
+            <div class="ratio ratio-16x9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/b1HUAMF_Btg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </figure -->
+        
+        <!-- Start thumbnails & text -->
+      
+        <section>
+          <div class="row p-3">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-4">
+              <img src="media/farmers-dashboard-1200x635.png" width="100%">
+            </div>
+            <div class="col-md-6 image-text">
+              We work on curiosity-driven goal-directed exploration
+              behaviours to move an image sensor around a plant.  The
+              artificial curiosity system assigns interest values to
+              pre-defined goals, and drives the exploration towards
+              those that are expected to maximise the learning
+              progress.
+            </div>
+          </div>
+        </section>
+        
+        <section>
+          <div class="row p-3">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-4">
+              <img src="media/farmers-dashboard-1200x635.png" width="100%">
+            </div>
+            <div class="col-md-6 image-text">
+              We also train agents to move the camera using
+              Reinforcement Learning. In this technique the agent has
+              to learn how to map situations to actions so as to
+              maximize a numerical reward. The learner is not told
+              which actions to take, but instead has to discover which
+              actions yield the most reward by trying them. In our
+              case, the reward is derived from building an accurate 3D
+              representation of a plant using a small number of
+              images.
+            </div>
+          </div>
+        </section>
+        
+      </div> <!-- container -->
+    </main>
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-5">
+            <strong class="logo">
+              <a href="index.html">
+                <span class="visually-hidden">ROMI - Robotics for Microfarms</span>
+              </a>
+            </strong>
+            <ul id="menu-footer-contact-navigation" class="contact-list">
+              <li id="menu-item-149" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-149"><a href="">info@romi-project.eu<i><img src="media/mail.svg" alt="media/mail.svg"></i></a></li>
+              <li id="menu-item-150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-150"><a href="https://twitter.com/ROMI_EU_PROJECT">@ROMI_EU_PROJECT<i><img src="media/tw.svg" alt="media/tw.svg"></i></a></li>
+              <li id="menu-item-151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-151"><a href="https://www.facebook.com/ROMIEUProject">/ROMIEUProject/<i><img src="media/fb.svg" alt="media/fb.svg"></i></a></li>
+          </ul>            </div>
+          <div class="col-md-5 col-sm-7">
+            <div class="col-wrap">
+              <div class="subscribe-form">
+                <!-- Add mailchimp code here -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="info-col">
+              <div class="descr">
+                <figure class="img">
+                  <img src="assets/images/eu_flag.svg" width="100px" alt="Romi">
+                </figure>
+                <p>This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 773875</p>
+              </div>
+              <div class="copyright">
+                <p>Copyright 2021 &copy; ROMI - Robotics for Microfarms</p>
+              </div>
+            </div>
+            <!-- / info-col -->
+          </div>
+          <!-- / col -->
+        </div>
+        <!-- / row -->
+      </div>
+      <!-- / container -->
+    </footer><!-- end footer -->
+
+    
     <!-- Bootstrap Bundle with Popper -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
