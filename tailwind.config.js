@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 const colors = {
   simeon: { // https://tailwind.simeongriggs.dev/green/00A960
@@ -159,6 +160,9 @@ module.exports = {
     extend: {
       colors: {
         primary: colors.ink.emerald,
+      },
+      fontFamily: {
+        sans: ['Nunito', ...defaultTheme.fontFamily.sans],
       },
     },
   },
