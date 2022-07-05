@@ -3,9 +3,9 @@
     <SiteHeader />
 
     <main class="py-10">
-      <!-- <NuxtLayout> -->
-        <NuxtPage class="container mx-auto py-8 grid gap-4" />
-      <!-- </NuxtLayout> -->
+      <NuxtLayout class="container mx-auto py-8 grid gap-4">
+        <NuxtPage />
+      </NuxtLayout>
     </main>
 
     <SiteFooter class="mt-auto" />
@@ -17,7 +17,7 @@ useHead({
   // title: null,
   titleTemplate: (title) => `${title ? (title + ' | ') : ''}ROMI: Robotics for Microfarms.`,
   meta: [
-    // { name: 'description', content: 'Design-focused front-end development specialized in Vue.js, Nuxt.js and TailwindCSS. Based in Barcelona. JAMstack lover.' },
+    // { name: 'description', content: '' },
   ],
   htmlAttrs: {
     lang: 'en',
@@ -25,11 +25,12 @@ useHead({
   },
   bodyAttrs: {
     class: 'h-full text-black bg-[#00aa5b] bg-[#00a960] bg-primary-500',
+    class: 'h-full text-primary-900 bg-primary-50 font-sans',
   },
 })
 </script>
 
 <style lang="postcss">
 #__nuxt { @apply h-full bg-inherit; }
-a { @apply underline; }
+a { @apply text-primary-400 hover:underline focus:underline; }
 </style>
