@@ -1,8 +1,3 @@
 <template>
-  <article>
-    <ContentDoc
-      class="grid gap-8"
-      _class="prose max-w-none text-current prose-headings:text-current prose-a:text-current"
-    />
-  </article>
+  <ContentDoc class="grid gap-16 md:gap-24 lg:gap-32" />
 </template>
