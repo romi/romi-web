@@ -5,12 +5,6 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/romi-project/',
   },
-  router: {
-    base: '/romi-project/',
-  },
-  nitro: {
-    baseURL: '/romi-project/',
-  },
   modules: [
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
