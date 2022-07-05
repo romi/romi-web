@@ -30,6 +30,9 @@ on:
     branches:
       - redesign
 
+env:
+  NUXT_APP_BASE_URL: '/romi-project/'
+
 jobs:
   build:
     runs-on: ubuntu-latest
