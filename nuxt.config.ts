@@ -2,7 +2,12 @@ import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  rootDir: '/romi-project',
+  router: {
+    base: '/romi-project/',
+  },
+  nitro: {
+    baseURL: '/romi-project/',
+  },
   modules: [
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
