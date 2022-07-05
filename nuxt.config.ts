@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
+    'unplugin-icons/nuxt',
   ],
 
   // content: {

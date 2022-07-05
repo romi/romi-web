@@ -4,13 +4,13 @@
       <div class="py-12" :class="['grid gap-8 grid-cols-2 md:grid-cols-4 lg:grid-cols-6']">
         <div class="col-span-1 grid gap-4 content-start">
           <NuxtLink class="" to="/">
-            <img class="h-16 invert" src="https://media.romi-project.eu/romi-web/assets/images/romi_logo_icon.svg" alt="Company name" />
+            <img class="h-16 invert" src="https://media.romi-project.eu/romi-web/assets/images/romi_logo_icon.svg" alt="ROMI logo" />
           </NuxtLink>
           <div class="">
             <p class="">Open tools for farming communities.</p>
           </div>
           <div class="flex space-x-6">
-            <a v-for="item in social" :key="item.name" :href="item.href" class="text-gray-400 hover:text-gray-500">
+            <a v-for="item in social" :key="item.name" :href="item.href" class="">
               <span class="sr-only">{{ item.name }}</span>
               <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
             </a>
@@ -43,6 +43,12 @@
 </template>
 
 <script setup>
+import IconEmail from '~icons/heroicons-solid/mail'
+import IconFacebook from '~icons/fa6-brands/facebook'
+import IconGitHub from '~icons/fa6-brands/github'
+import IconYouTube from '~icons/fa6-brands/youtube'
+import IconTwitter from '~icons/fa6-brands/twitter'
+
 const { data: tools } = await useAsyncData('tools', () => queryContent('/tools').where({ navigation: { $ne: false } }).find())
 const { data: research } = await useAsyncData('research', () => queryContent('/research').where({ navigation: { $ne: false } }).find())
 
@@ -65,8 +71,10 @@ const navigation = {
 }
 
 const social = [
-  { name: 'Email', href: 'mailto:info@romi-project.eu' },
-  { name: 'Twitter', href: 'https://twitter.com/ROMI_EU_Project' },
-  { name: 'Facebook', href: 'https://www.facebook.com/ROMIEUProject' },
+  { name: 'Email', href: 'mailto:info@romi-project.eu', icon: IconEmail },
+  { name: 'Twitter', href: 'https://twitter.com/ROMI_EU_Project', icon: IconTwitter },
+  { name: 'Facebook', href: 'https://www.facebook.com/ROMIEUProject', icon: IconFacebook },
+  { name: 'YouTube', href: 'https://www.youtube.com/watch?v=_5Zw77hQ8Sc&list=PL33KKs9g8Y1L5Dd2ZzoWJ0g19aIHrFBP8', icon: IconYouTube },
+  { name: 'GitHub', href: 'https://github.com/romi', icon: IconGitHub },
 ]
 </script>
