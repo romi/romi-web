@@ -165,6 +165,11 @@ module.exports = {
         sans: ['Nunito', ...defaultTheme.fontFamily.sans],
       },
     },
+
+    container: {
+      center: true,
+      padding: '1rem',
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),

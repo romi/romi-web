@@ -3,6 +3,7 @@ import { defineNuxtConfig } from 'nuxt'
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   // app: {
+  //   // buildAssetsDir: '../_nuxt/',
   //   baseURL: '/romi-project/',
   // },
   meta: {
@@ -15,6 +16,7 @@ export default defineNuxtConfig({
   modules: [
     ['@nuxt/content', { documentDriven: true }],
     '@nuxtjs/tailwindcss',
+    '@vueuse/nuxt',
     'unplugin-icons/nuxt',
   ],
 })

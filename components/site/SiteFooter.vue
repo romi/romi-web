@@ -3,7 +3,7 @@
     <div class="container divide-y mx-auto divide-primary-900 divide-opacity-25">
       <div class="py-12" :class="['grid gap-8 grid-cols-2 md:grid-cols-4 lg:grid-cols-7']">
         <div class="grid gap-4 content-start col-span-2">
-          <NuxtLink class="" to="/">
+          <NuxtLink class="w-max" to="/">
             <img class="h-12 invert" src="https://media.romi-project.eu/romi-web/assets/images/romi_logo_icon.svg" alt="ROMI logo" />
           </NuxtLink>
           <div class="">

@@ -1,9 +1,9 @@
 <template>
-  <div class="flex flex-col bg-inherit min-h-full px-2 sm:px-4 lg:px-8">
+  <div class="flex flex-col bg-inherit min-h-full">
     <SiteHeader />
 
     <main class="py-10">
-      <NuxtLayout class="container mx-auto py-8 grid gap-4">
+      <NuxtLayout :key="$route.path" class="container mx-auto py-16 grid gap-4">
         <NuxtPage />
       </NuxtLayout>
     </main>
@@ -33,4 +33,5 @@ useHead({
 <style lang="postcss">
 #__nuxt { @apply h-full bg-inherit; }
 a { @apply text-primary-400 hover:underline focus:underline; }
+*:focus { @apply ring outline-none ring-primary-500 rounded; }
 </style>
