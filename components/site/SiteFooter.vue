@@ -20,9 +20,7 @@
           <h3 class="text-sm font-semibold tracking-wider uppercase">{{ key }}</h3>
           <ul role="list" class="grid gap-1">
             <li v-for="item in nav" :key="item.name">
-              <a :href="item.href" class="text-base">
-                {{ item.name }}
-              </a>
+              <NuxtLink :to="item.href" :target="item.href && item.href.includes('://') ? '_blank' : null">{{ item.name }}</NuxtLink>
             </li>
           </ul>
         </div>
@@ -64,7 +62,7 @@ const navigation = {
     { name: 'Glossary', href: 'https://docs.romi-project.eu/glossary/' },
   ],
   company: [
-    { name: 'About', href: 'about' },
+    { name: 'About', href: '/about' },
     { name: 'Documents', href: 'https://media.romi-project.eu/documents/' },
     { name: 'Data', href: 'https://media.romi-project.eu/data/' },
   ],
