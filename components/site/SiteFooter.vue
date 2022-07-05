@@ -1,13 +1,13 @@
 <template>
   <footer>
-    <div class="container divide-y mx-auto divide-current">
-      <div class="py-12" :class="['grid gap-8 grid-cols-2 md:grid-cols-4 lg:grid-cols-6']">
-        <div class="col-span-1 grid gap-4 content-start">
+    <div class="container divide-y mx-auto divide-primary-900 divide-opacity-25">
+      <div class="py-12" :class="['grid gap-8 grid-cols-2 md:grid-cols-4 lg:grid-cols-7']">
+        <div class="grid gap-4 content-start col-span-2">
           <NuxtLink class="" to="/">
-            <img class="h-16 invert" src="https://media.romi-project.eu/romi-web/assets/images/romi_logo_icon.svg" alt="ROMI logo" />
+            <img class="h-12 invert" src="https://media.romi-project.eu/romi-web/assets/images/romi_logo_icon.svg" alt="ROMI logo" />
           </NuxtLink>
           <div class="">
-            <p class="">Open tools for farming communities.</p>
+            <p class="text-sm">Open tools for farming communities.</p>
           </div>
           <div class="flex space-x-6">
             <a v-for="item in social" :key="item.name" :href="item.href" class="">
@@ -17,7 +17,7 @@
           </div>
         </div>
         <div class="grid gap-2 content-start" v-for="(nav, key) in navigation" :key="key">
-          <h3 class="font-semibold tracking-wider uppercase">{{ key }}</h3>
+          <h3 class="text-sm font-semibold tracking-wider uppercase">{{ key }}</h3>
           <ul role="list" class="grid gap-1">
             <li v-for="item in nav" :key="item.name">
               <a :href="item.href" class="text-base">
@@ -27,8 +27,8 @@
           </ul>
         </div>
         <div class="grid gap-2 content-start">
-          <div class="w-24">
-            <img class="" src="https://romi-project.eu/assets/images/eu_flag.svg" alt="European flag">
+          <div class="">
+            <img class="h-12" src="https://romi-project.eu/assets/images/eu_flag.svg" alt="European flag">
           </div>
           <div class="text-xs">
             <p class="">This project has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 773875.</p>
