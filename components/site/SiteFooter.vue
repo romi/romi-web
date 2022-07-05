@@ -24,7 +24,7 @@
             </li>
           </ul>
         </div>
-        <div class="grid gap-2 content-start">
+        <div class="grid gap-4 content-start">
           <div class="">
             <img class="h-12" src="https://romi-project.eu/assets/images/eu_flag.svg" alt="European flag">
           </div>
