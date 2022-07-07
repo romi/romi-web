@@ -14,8 +14,8 @@
     "@tailwindcss/forms": "0.5.2",
     "@tailwindcss/line-clamp": "0.4.0",
     "@tailwindcss/typography": "0.5.2",
-    "@vueuse/core": "8.8.0",
-    "@vueuse/nuxt": "8.8.0",
+    "@vueuse/core": "8.9.0",
+    "@vueuse/nuxt": "8.9.0",
     "nuxt": "3.0.0-rc.4",
     "tailwindcss-text-fill-stroke": "npm:tailwindcss-text-fill-stroke@beta",
     "unplugin-icons": "0.14.7"
