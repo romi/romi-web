@@ -54,17 +54,20 @@ const navigation = {
   tools: tools.value.map(item => ({ name: item.title, href: item._path })),
   research: research.value.map(item => ({ name: item.title, href: item._path })),
   docs: [
-    { name: 'About', href: 'https://docs.romi-project.eu/about/' },
+    // { name: 'About', href: 'https://docs.romi-project.eu/about/' },
     { name: 'Documentation', href: 'https://docs.romi-project.eu/documentation/' },
-    { name: 'Research', href: 'https://docs.romi-project.eu/research/' },
-    { name: 'Training', href: 'https://docs.romi-project.eu/training/' },
-    { name: 'Data', href: 'https://docs.romi-project.eu/data/' },
-    { name: 'Glossary', href: 'https://docs.romi-project.eu/glossary/' },
+    // { name: 'Research', href: 'https://docs.romi-project.eu/research/' },
+    // { name: 'Training', href: 'https://docs.romi-project.eu/training/' },
+    // { name: 'Data', href: 'https://docs.romi-project.eu/data/' },
+    // { name: 'Glossary', href: 'https://docs.romi-project.eu/glossary/' },
+    { name: 'Topic Reports', href: '/topic-reports' },
+    { name: 'Training', href: '/training' },
   ],
-  company: [
+  project: [
     { name: 'About', href: '/about' },
-    { name: 'Documents', href: 'https://media.romi-project.eu/documents/' },
-    { name: 'Data', href: 'https://media.romi-project.eu/data/' },
+    { name: 'Downloads', href: '/downloads' },
+    // { name: 'Documents', href: 'https://media.romi-project.eu/documents/' },
+    // { name: 'Data', href: 'https://media.romi-project.eu/data/' },
   ],
 }
 
