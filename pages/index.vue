@@ -1,6 +1,6 @@
 <template>
   <div class="grid gap-16">
-    <ContentDoc class="max-w-5xl my-32" />
+    <ContentDoc class="my-32" />
 
     <section v-for="([title, query]) in [['Tools', '/tools'], ['Research', '/research']]" :key="query" class="grid gap-8">
       <header>
