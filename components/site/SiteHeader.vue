@@ -1,5 +1,5 @@
 <template>
-  <header class="z-40 sticky top-0 bg-primary-400/90 text-white transition-shadow backdrop-blur" :class="headerIsStuck && 'shadow-lg'">
+  <header class="z-40 sticky top-0 bg-primary-400 text-white transition-shadow" :class="headerIsStuck && 'shadow-lg'">
     <div class="grid items-start md:items-center gap-x-12 gap-y-6 container mx-auto py-4">
       <div class="flex justify-between items-center flex-none">
         <div>
