@@ -2,7 +2,7 @@
   <section
     data-section="split-hero"
     :class="[
-      'xl:sticky xl:top-[20vh] xl:min-h-[60vh]',
+      '_xl:sticky _xl:top-[20vh] xl:min-h-[60vh]',
       'grid grid-cols-1 xl:grid-cols-2 gap-4 items-center content-end xl:content-center',
       'rounded-3xl bg-cover',
       $slots.left && 'bg-right',
