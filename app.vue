@@ -24,7 +24,6 @@ useHead({
     class: 'text-base h-full',
   },
   bodyAttrs: {
-    class: 'h-full text-black bg-[#00aa5b] bg-[#00a960] bg-primary-500',
     class: 'h-full text-primary-900 bg-primary-50 font-sans',
   },
 })
