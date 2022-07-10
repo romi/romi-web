@@ -1,5 +1,5 @@
 <template>
-  <div class="aspect-w-16 aspect-h-9">
+  <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden">
     <template v-if="isActive">
       <iframe :src="`https://www.youtube.com/embed/${id}?autoplay=1`" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </template>

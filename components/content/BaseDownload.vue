@@ -4,7 +4,7 @@
       <p :class="className">{{ title }}</p>
       <BaseBadge v-if="badge" class="ml-auto flex-none">{{ badge }}</BaseBadge>
     </template>
-    <template #description>
+    <template #default>
       <p>{{ description }}</p>
     </template>
     <template #buttons>

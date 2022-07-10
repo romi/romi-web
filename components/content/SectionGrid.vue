@@ -5,14 +5,14 @@
         <li v-if="!article._file.includes('index') && article._path !== $route.path">
           <BaseCard>
             <template #media="{ className }">
-              <NuxtLink v-if="article.img" :class="className" :to="article._path">
+              <NuxtLink v-if="article.img" class="flex" :class="className" :to="article._path">
                 <img class="w-full object-contain" :src="article.img" :alt="`${article.title}`">
               </NuxtLink>
             </template>
             <template #title="{ className }">
               <h2 class="flex"><NuxtLink :class="className" :to="article._path">{{ article.title }}</NuxtLink></h2>
             </template>
-            <template #description>
+            <template #default>
               <p>{{ article.description }}</p>
             </template>
             <template #buttons>

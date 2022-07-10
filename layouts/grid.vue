@@ -2,7 +2,7 @@
   <article class="">
     <slot />
 
-    <SectionGrid v-bind="{ query: $route.path }" />
+    <SectionGrid class="mt-12" v-bind="{ query: $route.path }" />
   </article>
 </template>
 
