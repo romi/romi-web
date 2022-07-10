@@ -21,3 +21,20 @@
     </div>
   </div>
 </template>
+
+<script setup>
+const props = defineProps({
+  title: {
+    type: String,
+    default: null,
+  },
+  description: {
+    type: String,
+    default: null,
+  },
+  buttons: {
+    type: Array,
+    default: null,
+  },
+})
+</script>
