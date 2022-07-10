@@ -1,0 +1,9 @@
+{
+  "name": "ROMI: Robotics for Microfarms",
+  "short_name": "ROMI",
+  "theme_color": "#1eb37b",
+  "icons": [
+    { "src": "/favicon@6x.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/favicon@16x.png", "type": "image/png", "sizes": "512x512" }
+  ]
+}
