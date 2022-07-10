@@ -32,7 +32,7 @@ on:
 
 env:
   NUXT_APP_BASE_URL: '/romi-project/'
-  NUXT_APP_CDN_URL: 'https://hacknug.github.io/romi-project/'
+  # NUXT_APP_CDN_URL: 'https://hacknug.github.io/romi-project/'
 
 jobs:
   build:
@@ -43,13 +43,15 @@ jobs:
         uses: actions/checkout@master
         with:
           persist-credentials: false
-          submodules: true  # TODO remove this if not using submodules in Hexo
 
       - name: Install 🔧
         run: yarn install
 
       - name: Build 🏗️
         run: yarn generate
+
+      - name: Fix 🐛
+        run: cp -R dist/$NUXT_APP_BASE_URL/. ./dist/
 
       - name: Deploy to GH Pages 🚀
         uses: peaceiris/actions-gh-pages@v3
