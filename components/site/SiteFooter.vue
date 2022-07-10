@@ -4,7 +4,7 @@
       <div class="py-12" :class="['grid gap-8 grid-cols-2 md:grid-cols-4 lg:grid-cols-7']">
         <div class="grid gap-4 content-start col-span-2">
           <NuxtLink class="w-max" to="/">
-            <img class="h-12 invert" src="https://media.romi-project.eu/romi-web/assets/images/romi_logo_icon.svg" alt="ROMI logo" />
+            <img class="h-12 invert" src="/assets/logo.svg" alt="ROMI logo" />
           </NuxtLink>
           <div class="">
             <p class="text-sm">Open tools for farming communities.</p>
@@ -24,9 +24,9 @@
             </li>
           </ul>
         </div>
-        <div class="grid gap-4 content-start">
+        <div class="grid gap-4 content-start col-span-2 lg:col-span-1">
           <div class="">
-            <img class="h-12" src="https://romi-project.eu/assets/images/eu_flag.svg" alt="European flag">
+            <img class="h-12" src="/assets/flag-europe.svg" alt="European flag">
           </div>
           <div class="text-xs">
             <p class="">This project has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 773875.</p>
@@ -54,20 +54,13 @@ const navigation = {
   tools: tools.value.map(item => ({ name: item.title, href: item._path })),
   research: research.value.map(item => ({ name: item.title, href: item._path })),
   docs: [
-    // { name: 'About', href: 'https://docs.romi-project.eu/about/' },
     { name: 'Documentation', href: 'https://docs.romi-project.eu/documentation/' },
-    // { name: 'Research', href: 'https://docs.romi-project.eu/research/' },
-    // { name: 'Training', href: 'https://docs.romi-project.eu/training/' },
-    // { name: 'Data', href: 'https://docs.romi-project.eu/data/' },
-    // { name: 'Glossary', href: 'https://docs.romi-project.eu/glossary/' },
     { name: 'Topic Reports', href: '/topic-reports' },
     { name: 'Training', href: '/training' },
   ],
   project: [
     { name: 'About', href: '/about' },
     { name: 'Downloads', href: '/downloads' },
-    // { name: 'Documents', href: 'https://media.romi-project.eu/documents/' },
-    // { name: 'Data', href: 'https://media.romi-project.eu/data/' },
   ],
 }
 

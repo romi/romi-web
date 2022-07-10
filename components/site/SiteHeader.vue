@@ -4,7 +4,7 @@
       <div class="flex justify-between items-center flex-none">
         <div>
           <NuxtLink class="flex" to="/">
-            <img class="h-12" src="https://media.romi-project.eu/romi-web/assets/images/romi_logo_icon.svg" alt="ROMI logo" />
+            <img class="h-12" src="/assets/logo.svg" alt="ROMI logo" />
           </NuxtLink>
         </div>
         <div>

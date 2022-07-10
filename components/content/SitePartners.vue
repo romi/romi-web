@@ -4,7 +4,7 @@
       <li v-for="article in list" :key="article._path" :class="['grid gap-4 content-start', 'bg-white rounded-lg p-8']">
         <div class="flex">
           <NuxtLink class="flex" :to="article.url" target="_blank">
-            <img class="w-auto max-h-16 object-contain" :src="article.logo" :alt="`${article.title} logo`">
+            <img class="w-auto h-16 object-contain object-left-bottom grayscale" :src="article.logo" :alt="`${article.title} logo`">
           </NuxtLink>
         </div>
         <div class="grid gap-2">
