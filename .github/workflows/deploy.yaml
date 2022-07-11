@@ -30,9 +30,9 @@ on:
     branches:
       - redesign
 
-env:
-  NUXT_APP_BASE_URL: '/romi-web/'
-  # NUXT_APP_CDN_URL: 'https://romi.github.io/romi-web/'
+# env:
+#   NUXT_APP_BASE_URL: '/romi-web/'
+#   # NUXT_APP_CDN_URL: 'https://romi.github.io/romi-web/'
 
 jobs:
   build:
@@ -50,8 +50,8 @@ jobs:
       - name: Build 🏗️
         run: yarn generate
 
-      - name: Fix 🐛
-        run: cp -R dist/$NUXT_APP_BASE_URL/. ./dist/
+      # - name: Fix 🐛
+      #   run: cp -R dist/$NUXT_APP_BASE_URL/. ./dist/
 
       - name: Deploy to GH Pages 🚀
         uses: peaceiris/actions-gh-pages@v3
