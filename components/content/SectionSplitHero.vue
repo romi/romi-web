@@ -33,7 +33,4 @@
 :deep(:is(h6)) { @apply !text-lg; } */
 :deep(p) { @apply xl:text-lg; }
 :deep(* + p) { @apply mt-[1em]; }
-
-* + [data-section="split-hero"] { @apply mt-48; }
-[data-section="split-hero"] + [data-section="split-hero"] { @apply mt-12; }
 </style>
