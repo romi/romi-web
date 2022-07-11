@@ -1,0 +1,1 @@
+import{_ as r,o as t,c as n,r as o}from"./entry-49f2ff2c.mjs";const s={},a={class:"flex-inline px-2 py-1 text-xs text-primary-400 bg-primary-100 uppercase tracking-wide rounded"};function c(e,_){return t(),n("div",a,[o(e.$slots,"default")])}var p=r(s,[["render",c]]);export{p as default};
