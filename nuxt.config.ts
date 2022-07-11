@@ -11,7 +11,7 @@ export default defineNuxtConfig({
       { name: 'theme-color', content: '#1eb37b' },
     ],
     link: [
-      { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
+      { rel: 'icon', href: '/favicon.png', sizes: 'any' }, // TODO: Convert to `.ico`
       { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' },
       { rel: 'apple-touch-icon', href: '/favicon@5.625x.png' },
       { rel: 'manifest', href: '/manifest.webmanifest' },
