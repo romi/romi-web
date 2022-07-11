@@ -4,8 +4,8 @@
       <template v-for="article in list" :key="article._path">
         <li v-if="!article._file.includes('index') && article._path !== $route.path">
           <BaseCard>
-            <template #media="{ className }">
-              <NuxtLink v-if="article.img" class="flex" :class="className" :to="article._path">
+            <template #media>
+              <NuxtLink v-if="article.img" class="flex" :to="article._path">
                 <img class="w-full object-contain" :src="article.img" :alt="`${article.title}`">
               </NuxtLink>
             </template>

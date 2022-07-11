@@ -1,8 +1,8 @@
 <template>
-  <div :class="['grid gap-8 content-start', 'bg-white rounded-xl p-8', 'overflow-hidden isolate']">
-    <slot name="media" v-bind="{ className: '-mt-8 -mx-8' }" />
+  <div :class="['grid content-start', 'bg-white rounded-xl', 'overflow-hidden isolate']">
+    <slot name="media" />
 
-    <div class="grid gap-2 content-start">
+    <div v-if="(title || $slots.title) || (description || $slots.default) || (buttons || $slots.buttons)" class="grid gap-2 content-start p-8">
       <div v-if="title || $slots.title" class="flex items-baseline">
         <slot name="title" v-bind="{ className: 'text-xl font-bold' }">{{ title }}</slot>
       </div>

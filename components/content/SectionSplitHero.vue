@@ -2,20 +2,20 @@
   <section
     data-section="split-hero"
     :class="[
-      '_xl:sticky _xl:top-[20vh] xl:min-h-[60vh]',
-      'grid grid-cols-1 xl:grid-cols-2 gap-4 items-center content-end xl:content-center',
+      'pt-[40vh] _xl:sticky _xl:top-[20vh] xl:min-h-[60vh]',
+      'grid grid-cols-1 xl:grid-cols-2 p-4 xl:p-16 gap-4 xl:gap-16 items-center content-end xl:content-center',
       'rounded-3xl bg-cover',
       $slots.left && 'bg-right',
       $slots.right && 'bg-left',
     ]"
   >
-    <div v-if="$slots.left" class="p-4 xl:p-16 xl:col-start-1">
+    <div v-if="$slots.left" class="xl:col-start-1">
       <slot name="left"></slot>
     </div>
-    <div v-if="$slots.right" class="p-4 xl:p-16 xl:col-start-2">
+    <div v-if="$slots.right" class="xl:col-start-2">
       <slot name="right"></slot>
     </div>
-    <div v-if="$slots.center" class="p-4 xl:p-16 xl:col-span-2">
+    <div v-if="$slots.center" class="xl:col-span-2">
       <slot name="center"></slot>
     </div>
   </section>

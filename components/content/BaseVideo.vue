@@ -1,9 +1,7 @@
 <template>
   <BaseCard>
-    <template #media="{ className }">
-      <figure v-if="item.id" :class="className">
-        <EmbedYoutube class="rounded-none" :id="item.id" />
-      </figure>
+    <template #media>
+      <EmbedYoutube v-if="item.id" class="rounded-none" :id="item.id" />
     </template>
     <template v-if="item.description" #default>
       <p>{{ item.description }}</p>
