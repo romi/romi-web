@@ -1,5 +1,7 @@
 import { defineNuxtConfig } from 'nuxt'
 
+console.log(process.env.NUXT_APP_BASE_URL)
+
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   // app: {
@@ -7,6 +9,7 @@ export default defineNuxtConfig({
   //   baseURL: '/romi-project/',
   // },
   meta: {
+    base: process.env.NUXT_APP_BASE_URL ? { href: process.env.NUXT_APP_BASE_URL } : { href: '/' },
     meta: [
       { name: 'theme-color', content: '#1eb37b' },
     ],
