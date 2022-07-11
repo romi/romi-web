@@ -4,7 +4,7 @@
       <iframe :src="`https://www.youtube.com/embed/${id}?autoplay=1`" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </template>
     <template v-else>
-      <img class="object-cover" :src="`http://i3.ytimg.com/vi/${id}/maxresdefault.jpg`" alt="">
+      <img class="object-cover" :src="`https://i3.ytimg.com/vi/${id}/maxresdefault.jpg`" alt="">
       <button class="group flex justify-center items-center" @click="isActive = !isActive">
         <div class="w-20 h-w-20 rounded-full bg-primary-400/75 group-hover:scale-105 group-focus:scale-105 transition-transform shadow">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-full fill-primary-50" viewBox="0 0 20 20">
