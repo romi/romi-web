@@ -24,7 +24,7 @@ export default defineNuxtConfig({
   },
   modules: [
     ['@nuxt/content', { documentDriven: true }],
-    ['@nuxt/image-edge'],
+    // ['@nuxt/image-edge'],
     ['@nuxtjs/tailwindcss'],
     ['@vueuse/nuxt'],
     ['unplugin-icons/nuxt'],

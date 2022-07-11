@@ -6,7 +6,7 @@
           <BaseCard>
             <template #media>
               <NuxtLink v-if="article.img" class="flex" :to="article._path">
-                <NuxtImg class="w-full object-contain" :src="article.img" :alt="`${article.title}`" />
+                <img class="w-full object-contain" :src="article.img" :alt="`${article.title}`">
               </NuxtLink>
             </template>
             <template #title="{ className }">
