@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   //   baseURL: '/romi-project/',
   // },
   meta: {
-    base: process.env.NUXT_APP_BASE_URL ? { href: process.env.NUXT_APP_BASE_URL } : { href: '/' },
+    // base: process.env.NUXT_APP_BASE_URL ? { href: process.env.NUXT_APP_BASE_URL } : { href: '/' },
     meta: [
       { name: 'theme-color', content: '#1eb37b' },
     ],
