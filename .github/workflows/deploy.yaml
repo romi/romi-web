@@ -50,8 +50,8 @@ jobs:
       - name: Build 🏗️
         run: yarn generate
 
-      - name: Fix 🐛
-        run: cp -R dist/$NUXT_APP_BASE_URL/. ./dist/
+      # - name: Fix 🐛
+      #   run: cp -R dist/$NUXT_APP_BASE_URL/. ./dist/
 
       - name: Deploy to GH Pages 🚀
         uses: peaceiris/actions-gh-pages@v3
