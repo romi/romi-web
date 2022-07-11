@@ -32,7 +32,7 @@ on:
 
 env:
   NUXT_APP_BASE_URL: '/romi-web/'
-  NUXT_APP_CDN_URL: 'https://romi.github.io/romi-web/'
+  # NUXT_APP_CDN_URL: 'https://romi.github.io/romi-web/'
 
 jobs:
   build:
