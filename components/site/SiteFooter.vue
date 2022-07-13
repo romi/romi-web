@@ -68,7 +68,7 @@ const social = [
   { name: 'Email', href: 'mailto:info@romi-project.eu', icon: IconEmail },
   { name: 'Twitter', href: 'https://twitter.com/ROMI_EU_Project', icon: IconTwitter },
   { name: 'Facebook', href: 'https://www.facebook.com/ROMIEUProject', icon: IconFacebook },
-  { name: 'YouTube', href: 'https://www.youtube.com/watch?v=_5Zw77hQ8Sc&list=PL33KKs9g8Y1L5Dd2ZzoWJ0g19aIHrFBP8', icon: IconYouTube },
+  { name: 'YouTube', href: 'https://www.youtube.com/channel/UCT55o32SE30a8pTu-chatTA', icon: IconYouTube },
   { name: 'GitHub', href: 'https://github.com/romi', icon: IconGitHub },
 ]
 </script>
