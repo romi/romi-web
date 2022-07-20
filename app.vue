@@ -32,5 +32,5 @@ useHead({
 <style lang="postcss">
 #__nuxt { @apply h-full bg-inherit; }
 a { @apply text-primary-400 hover:underline focus:underline; }
-*:focus { @apply ring outline-none ring-primary-500 rounded; }
+*:focus-visible { @apply ring outline-none ring-primary-500 rounded; }
 </style>
