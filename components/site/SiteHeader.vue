@@ -33,6 +33,8 @@
 </template>
 
 <script setup>
+const route = useRoute()
+
 const target = ref(null)
 const headerIsStuck = ref(false)
 const navIsVisible = ref(false)
@@ -43,6 +45,11 @@ const { stop } = useIntersectionObserver(
     headerIsStuck.value = !isIntersecting
   },
 )
+
+watch(() => route.fullPath, () => {
+  navIsVisible.value = false
+  // document.activeElement.blur()
+})
 
 function toggleNav () {
   navIsVisible.value = !navIsVisible.value
