@@ -48,7 +48,7 @@ const { stop } = useIntersectionObserver(
 
 watch(() => route.fullPath, () => {
   navIsVisible.value = false
-  // document.activeElement.blur()
+  document.activeElement.blur()
 })
 
 function toggleNav () {
