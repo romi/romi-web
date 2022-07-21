@@ -4,9 +4,9 @@
       <li v-for="article in list" :key="article._path">
         <BaseCard v-bind="article" class="h-full">
           <template #media>
-            <NuxtLink class="flex pt-8 px-8" :to="article.url" target="_blank">
+            <figure class="flex pt-8 px-8 -mb-2">
               <img class="w-auto h-16 object-contain object-left-bottom grayscale" :src="article.logo" :alt="`${article.title} logo`">
-            </NuxtLink>
+            </figure>
           </template>
           <template #title>
             <h2 class="flex !text-xl md:!text-2xl">
@@ -14,7 +14,7 @@
             </h2>
           </template>
           <template #default>
-            <p>{{ article.description }}</p>
+            <p class="text-base">{{ article.description }}</p>
           </template>
         </BaseCard>
       </li>
