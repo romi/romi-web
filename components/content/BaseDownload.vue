@@ -1,13 +1,13 @@
 <template>
   <BaseCard>
-    <template #title="{ className }">
+    <template #title="{ className }" v-if="title">
       <p :class="className">{{ title }}</p>
       <BaseBadge v-if="badge" class="ml-auto flex-none">{{ badge }}</BaseBadge>
     </template>
-    <template #default>
+    <template #default v-if="description">
       <p>{{ description }}</p>
     </template>
-    <template #buttons>
+    <template #buttons v-if="downloads.length">
       <template v-for="(download, key) in downloads" :key="key">
         <BaseButton :to="download.link" :variant="key === 0 ? 'primary' : 'secondary'">{{ download.label || 'Download' }}</BaseButton>
       </template>
