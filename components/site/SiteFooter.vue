@@ -33,7 +33,7 @@
           </div>
         </div>
       </div>
-      <div class="py-4">
+      <div class="py-4 text-sm">
         <p>&copy; {{ new Date().getFullYear() }} ROMI: Robotics for Microfarms.</p>
       </div>
     </div>
