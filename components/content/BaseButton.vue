@@ -4,7 +4,7 @@
       :is="to ? NuxtLink : 'button'"
       :to="to ? to : null"
       :target="to && to.includes('://') ? '_blank' : null"
-      :class="[variant === 'primary' ? 'text-white bg-primary-400' : 'bg-primary-100', 'rounded-lg px-4 py-2']"
+      :class="[variant === 'primary' ? 'text-white bg-primary-400' : 'bg-transparent', 'border border-primary-400 rounded-lg px-4 py-2']"
     >
       <slot />
     </component>

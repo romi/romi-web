@@ -1,22 +1,25 @@
 <template>
-  <div :class="['grid content-start', 'bg-white rounded-xl', 'overflow-hidden isolate']">
+  <div :class="[
+    'grid content-start',
+    'border border-primary-400/50 rounded-xl',
+    'overflow-hidden isolate',
+    variant === 'primary' ? 'bg-primary-100/25' : 'bg-white',
+  ]">
     <slot name="media" />
 
-    <div v-if="(title || $slots.title) || (description || $slots.default) || (buttons || $slots.buttons)" class="grid gap-2 content-start p-8">
+    <div v-if="(title || $slots.title) || (description || $slots.default) || (buttons || $slots.buttons)" class="grid gap-4 content-start p-8">
       <div v-if="title || $slots.title" class="flex items-baseline">
         <slot name="title" v-bind="{ className: 'text-xl font-bold' }">{{ title }}</slot>
       </div>
-      <div class="grid gap-2">
-        <div v-if="description || $slots.default">
-          <slot name="default">{{ description }}</slot>
-        </div>
-        <div v-if="buttons || $slots.buttons" class="flex flex-wrap gap-2 mt-2">
-          <slot name="buttons">
-            <template v-for="(button, key) in buttons" :key="key">
-              <BaseButton :to="buttons.link" :variant="key === 0 ? 'primary' : 'secondary'">{{ buttons.label }}</BaseButton>
-            </template>
-          </slot>
-        </div>
+      <BaseProse v-if="description || $slots.default">
+        <slot name="default">{{ description }}</slot>
+      </BaseProse>
+      <div v-if="buttons || $slots.buttons" class="flex flex-wrap gap-2 text-base" :class="(description || $slots.default) && 'mt-2'">
+        <slot name="buttons">
+          <template v-for="(button, key) in buttons" :key="key">
+            <BaseButton :to="buttons.link" :variant="key === 0 ? 'primary' : 'secondary'">{{ buttons.label }}</BaseButton>
+          </template>
+        </slot>
       </div>
     </div>
   </div>
@@ -36,5 +39,13 @@ const props = defineProps({
     type: Array,
     default: null,
   },
+  variant: {
+    type: String,
+    default: 'default',
+  },
 })
 </script>
+
+<style lang="postcss" scoped>
+img { @apply w-full h-full object-cover; }
+</style>
