@@ -3,7 +3,7 @@
     <SiteHeader />
 
     <main class="py-10">
-      <NuxtLayout :key="$route.path" class="container _!max-w-7xl mx-auto py-16 grid gap-4 text-lg">
+      <NuxtLayout :key="$route.path" class="container _!max-w-7xl mx-auto py-16 grid gap-4 xl:text-lg">
         <NuxtPage />
       </NuxtLayout>
     </main>
@@ -24,7 +24,7 @@ useHead({
     class: 'text-base h-full',
   },
   bodyAttrs: {
-    class: 'h-full text-primary-900 bg-primary-50 font-sans',
+    class: 'h-full text-primary-900/75 bg-primary-50 font-sans',
   },
 })
 </script>

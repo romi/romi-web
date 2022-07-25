@@ -1,7 +1,7 @@
 <template>
   <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden">
     <template v-if="isActive">
-      <iframe :src="`https://www.youtube.com/embed/${id}?autoplay=1`" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe v-if="platform === 'youtube'" :src="`https://www.youtube.com/embed/${id}?autoplay=1`" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </template>
     <template v-else>
       <img class="object-cover" :src="`https://i3.ytimg.com/vi/${id}/maxresdefault.jpg`" alt="">
@@ -21,6 +21,10 @@ const props = defineProps({
   id: {
     type: String,
     required: true,
+  },
+  platform: {
+    type: String,
+    default: 'youtube',
   },
 })
 
