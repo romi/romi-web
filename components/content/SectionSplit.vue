@@ -3,9 +3,9 @@
     <div class="md:group-odd:col-start-1 md:group-even:col-start-2 md:row-start-1">
       <slot name="media"></slot>
     </div>
-    <div class="md:group-odd:col-start-2 md:group-even:col-start-1 md:row-start-1">
+    <BaseProse class="md:group-odd:col-start-2 md:group-even:col-start-1 md:row-start-1">
       <slot name="default"></slot>
-    </div>
+    </BaseProse>
   </div>
 </template>
 

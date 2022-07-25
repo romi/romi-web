@@ -19,8 +19,8 @@
 
     & > li {
       counter-increment: list-counter;
-      @apply relative pl-9;
-      & :matches(+ li, > :matches(ol, ul)) { margin-top: 0.6em; }
+      @apply relative pl-6;
+      & :is(+ li, > :is(ol, ul)) { margin-top: 0.6em; }
     }
 
     &:not(ul) > li::before {
@@ -34,13 +34,13 @@
       @apply absolute left-1 transform scale-50 origin-left;
     }
 
-    /* & :matches(ul, ol) {
-      & :matches(ul, ol) ol {
+    /* & :is(ul, ol) {
+      & :is(ul, ol) ol {
         list-style-type: lower-alpha;
       }
     }
 
-    & > div > :matches(ul, ol) {
+    & > div > :is(ul, ol) {
       counter-reset: item;
 
       & > li {
