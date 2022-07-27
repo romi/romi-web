@@ -162,7 +162,8 @@ module.exports = {
         primary: colors.ink.emerald,
       },
       fontFamily: {
-        sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+        sans: ['Nunito Sans', ...defaultTheme.fontFamily.sans],
+        rounded: ['Nunito', ...defaultTheme.fontFamily.sans],
       },
     },
 
