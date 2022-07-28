@@ -19,7 +19,7 @@
     "@vueuse/components": "9.0.0",
     "@vueuse/core": "9.0.0",
     "@vueuse/nuxt": "9.0.0",
-    "nuxt": "3.0.0-rc.6",
+    "nuxt": "npm:nuxt3@latest",
     "tailwindcss-text-fill-stroke": "npm:tailwindcss-text-fill-stroke@beta",
     "unplugin-icons": "0.14.7"
   }
