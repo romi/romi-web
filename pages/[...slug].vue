@@ -3,7 +3,7 @@
     <template #default>
       <ContentDoc class="grid gap-16" />
     </template>
-    <template #toc v-if="page.showToc">
+    <template #toc v-if="page && page.showToc">
       <SitePageNavigation v-bind="{ toc }" />
     </template>
   </NuxtLayout>
