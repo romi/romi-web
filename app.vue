@@ -15,7 +15,7 @@ useHead({
   // title: null,
   titleTemplate: (title) => `${title ? (title + ' | ') : ''}ROMI: Robotics for Microfarms.`,
   meta: [
-    // { name: 'description', content: '' },
+    { name: 'description', content: 'Robotics for Microfarms develops open technologies to assist organic, diversified, vegetable farmers.' },
   ],
   htmlAttrs: {
     lang: 'en',
