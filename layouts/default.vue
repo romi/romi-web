@@ -1,9 +1,17 @@
 <template>
-  <article class="container _!max-w-7xl mx-auto py-16 grid gap-4 xl:text-lg" :class="$slots.toc && 'xl:gap-16 xl:grid-cols-[1fr_24rem]'">
-    <slot name="default" />
-    <slot name="toc" />
+  <article class="container _!max-w-7xl mx-auto py-16 xl:text-lg" :style="`--site-header-offset: ${(top + y) / 16}rem`">
+    <div ref="wrapper" class="grid gap-4" :class="$slots.toc && 'xl:gap-16 xl:grid-cols-[1fr_24rem]'">
+      <slot name="default" />
+      <slot name="toc" />
+    </div>
   </article>
 </template>
+
+<script setup>
+const wrapper = ref(null)
+const { top } = useElementBounding(wrapper)
+const { y } = useWindowScroll()
+</script>
 
 <style lang="postcss" scoped>
 :deep(:is(h1, h2, h3, h4, h5, h6)) { @apply text-primary-400 font-bold; }
