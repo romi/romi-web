@@ -1,6 +1,7 @@
 <template>
-  <article>
-    <slot />
+  <article class="container _!max-w-7xl mx-auto py-16 grid gap-4 xl:text-lg" :class="$slots.toc && 'xl:gap-16 xl:grid-cols-[1fr_24rem]'">
+    <slot name="default" />
+    <slot name="toc" />
   </article>
 </template>
 

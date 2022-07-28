@@ -7,16 +7,17 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "@iconify/json": "2.1.80",
+    "@iconify/json": "2.1.84",
     "@nuxt/content": "npm:@nuxt/content-edge@latest",
     "@nuxt/image-edge": "1.0.0-27628766.3629b9a",
-    "@nuxtjs/tailwindcss": "5.3.0",
+    "@nuxtjs/tailwindcss": "5.3.1",
     "@tailwindcss/aspect-ratio": "0.4.0",
     "@tailwindcss/forms": "0.5.2",
     "@tailwindcss/line-clamp": "0.4.0",
     "@tailwindcss/typography": "0.5.4",
-    "@vueuse/core": "8.9.4",
-    "@vueuse/nuxt": "8.9.4",
+    "@vueuse/components": "9.0.0",
+    "@vueuse/core": "9.0.0",
+    "@vueuse/nuxt": "9.0.0",
     "nuxt": "3.0.0-rc.6",
     "tailwindcss-text-fill-stroke": "npm:tailwindcss-text-fill-stroke@beta",
     "unplugin-icons": "0.14.7"

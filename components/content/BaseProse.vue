@@ -1,68 +1,28 @@
 <template>
-  <div class="rich-text">
+  <component :is="tag" class="rich-text">
     <slot />
-  </div>
+  </component>
 </template>
 
 <script setup>
-
+const props = defineProps({
+  tag: {
+    type: String,
+    default: 'div',
+  },
+})
 </script>
 
 <style lang="postcss">
 .rich-text {
-  @apply max-w-[50em];
+  @apply max-w-[60em];
 
   & > * + * { margin-top: 1em; }
 
-  & :is(ol, ul) {
-    counter-reset: list-counter;
-
-    & > li {
-      counter-increment: list-counter;
-      @apply relative pl-6;
-      & :is(+ li, > :is(ol, ul)) { margin-top: 0.6em; }
-    }
-
-    &:not(ul) > li::before {
-      content: counter(list-counter) '.';
-      @apply absolute left-0 transform scale-75 origin-left;
-    }
-
-    &:not(ol) > li::before {
-      content: '\25CB \FE0E';
-      content: '\25CF \FE0E';
-      @apply absolute left-1 transform scale-50 origin-left;
-    }
-
-    /* & :is(ul, ol) {
-      & :is(ul, ol) ol {
-        list-style-type: lower-alpha;
-      }
-    }
-
-    & > div > :is(ul, ol) {
-      counter-reset: item;
-
-      & > li {
-        counter-increment: item;
-
-        & > ol {
-          list-style-type: none;
-          counter-reset: item;
-
-          & > li {
-            counter-increment: item;
-            @apply table;
-
-            &::before {
-              content: counters(item, '.') '. ';
-              font-variant-numeric: tabular-nums;
-              @apply table-cell;
-            }
-          }
-        }
-      }
-    } */
+  & :is(ol, ul, menu) {
+    list-style: revert;
+    margin: revert;
+    padding: revert;
   }
 }
 </style>

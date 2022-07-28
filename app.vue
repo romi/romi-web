@@ -3,9 +3,7 @@
     <SiteHeader />
 
     <main class="py-10">
-      <NuxtLayout :key="$route.path" class="container _!max-w-7xl mx-auto py-16 grid gap-4 xl:text-lg">
-        <NuxtPage />
-      </NuxtLayout>
+      <NuxtPage />
     </main>
 
     <SiteFooter class="mt-auto" />
