@@ -8,8 +8,8 @@
     <slot name="media" />
 
     <div v-if="(title || $slots.title) || (description || $slots.default) || (buttons || $slots.buttons)" class="grid gap-4 content-start p-8">
-      <div v-if="title || $slots.title" class="flex justify-between items-baseline space-x-2">
-        <slot name="title" v-bind="{ className: 'text-xl font-bold' }">{{ title }}</slot>
+      <div v-if="title || $slots.title" class="flex justify-between items-baseline space-x-2" :class="['text-xl md:text-2xl font-semibold']">
+        <slot name="title" v-bind="{ className: ['text-xl md:text-2xl font-semibold'] }">{{ title }}</slot>
       </div>
       <BaseProse v-if="description || $slots.default">
         <slot name="default">{{ description }}</slot>
