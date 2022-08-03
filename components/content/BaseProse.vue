@@ -15,7 +15,7 @@ const props = defineProps({
 
 <style lang="postcss">
 .rich-text {
-  @apply max-w-[60em];
+  @apply max-w-[55em];
 
   & > * + * { margin-top: 1em; }
 

@@ -1,7 +1,7 @@
 <template>
   <BaseCard v-bind="item">
     <template #media>
-      <BaseEmbed v-if="item.id" class="rounded-none" :id="item.id" />
+      <BaseEmbed v-if="item.id" class="-mt-px -mx-px rounded-none" :id="item.id" />
     </template>
   </BaseCard>
 </template>
