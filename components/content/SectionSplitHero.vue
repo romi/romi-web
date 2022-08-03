@@ -4,7 +4,7 @@
     :class="[
       'pt-[40vh] _xl:sticky _xl:top-[20vh] xl:min-h-[80vh]',
       'grid grid-cols-1 xl:grid-cols-2 p-4 xl:p-16 gap-4 xl:gap-16 items-center content-end xl:content-center',
-      'rounded-3xl bg-cover',
+      'border border-primary-400/50 rounded-3xl bg-cover bg-origin-border',
       $slots.left && 'bg-right',
       $slots.right && 'bg-left',
     ]"
