@@ -1,10 +1,7 @@
 <template>
-  <BaseCard>
+  <BaseCard v-bind="item">
     <template #media>
       <BaseEmbed v-if="item.id" class="rounded-none" :id="item.id" />
-    </template>
-    <template v-if="item.description" #default>
-      <p>{{ item.description }}</p>
     </template>
   </BaseCard>
 </template>
