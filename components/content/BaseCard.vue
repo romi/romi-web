@@ -17,7 +17,7 @@
       <div v-if="buttons || $slots.buttons" class="flex flex-wrap gap-2 text-base" :class="(description || $slots.default) && 'mt-2'">
         <slot name="buttons">
           <template v-for="(button, key) in buttons" :key="key">
-            <BaseButton :to="buttons.link" :variant="key === 0 ? 'primary' : 'secondary'">{{ buttons.label }}</BaseButton>
+            <BaseButton :to="button.link" :variant="key === 0 ? 'primary' : 'secondary'">{{ button.label }}</BaseButton>
           </template>
         </slot>
       </div>
