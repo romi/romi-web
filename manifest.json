@@ -466,12 +466,12 @@
     "file": "_nuxt/error-404.9068d4d6.css",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.css"
   },
-  "layouts/default.css": {
-    "file": "_nuxt/default.62eb4584.css",
-    "src": "layouts/default.css"
-  },
   "node_modules/@nuxt/ui-templates/dist/templates/error-500.css": {
     "file": "_nuxt/error-500.0658ea61.css",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-500.css"
+  },
+  "layouts/default.css": {
+    "file": "_nuxt/default.62eb4584.css",
+    "src": "layouts/default.css"
   }
 }
